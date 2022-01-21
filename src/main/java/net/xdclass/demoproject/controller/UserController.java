@@ -28,9 +28,8 @@ public class UserController {
      */
     @PostMapping("/login")
     public JsonData login(@RequestBody User user) {
-        System.out.println("user=" + user.toString());
         String token = userService.login(user.getUsername(), user.getPwd());
-        return token != null ? JsonData.buildSuccess("登录成功") : JsonData.buildError("登录失败，" +
+        return token != null ? JsonData.buildSuccess(token) : JsonData.buildError("登录失败，" +
                 "用户名或密码错误！");
     }
 

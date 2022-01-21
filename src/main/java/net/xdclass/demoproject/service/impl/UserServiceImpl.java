@@ -21,7 +21,7 @@ import java.util.UUID;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private static Map<String, User> sessionMap = new HashMap<>();
+    public static Map<String, User> sessionMap = new HashMap<>();
 
     @Autowired
     private UserMapper userMapper;
@@ -33,7 +33,6 @@ public class UserServiceImpl implements UserService {
             return null;
         } else {
             String token = UUID.randomUUID().toString();
-            System.out.println(token);
             sessionMap.put(token, user);
             return token;
         }

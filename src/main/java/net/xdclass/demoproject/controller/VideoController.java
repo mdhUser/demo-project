@@ -22,7 +22,8 @@ public class VideoController {
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     public JsonData list(){
-       return videoService.getListVideo();
+        int i=1/0;
+       return JsonData.buildSuccess(videoService.getListVideo());
     }
 
     @PostMapping("/saveVideoChapter")

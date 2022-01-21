@@ -1,12 +1,8 @@
 package net.xdclass.demoproject.mapper;
-
 import net.xdclass.demoproject.domain.Video;
 import org.springframework.stereotype.Repository;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @program: demo-project
@@ -21,11 +17,11 @@ public class VideoMapper {
     private static Map<Integer, Video> videoMap = new HashMap<>();
 
     static {
-        videoMap.put(1, new Video(1,""));
-        videoMap.put(2, new Video(2,""));
-        videoMap.put(3, new Video(3,""));
-        videoMap.put(4, new Video(4,""));
-        videoMap.put(5, new Video(5,""));
+        videoMap.put(1, new Video(1,"sda",new Date()));
+        videoMap.put(2, new Video(2,"dwdw",new Date()));
+        videoMap.put(3, new Video(3,"wdqwd",new Date()));
+        videoMap.put(4, new Video(4,"asdasd",new Date()));
+        videoMap.put(5, new Video(5,"ewqedq",new Date()));
     }
 
     public List<Video> getList(){

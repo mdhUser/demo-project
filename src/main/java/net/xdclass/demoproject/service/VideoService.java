@@ -13,5 +13,5 @@ import java.util.List;
  **/
 public interface VideoService {
 
-    public JsonData getListVideo();
+    public List<Video> getListVideo();
 }

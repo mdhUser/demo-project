@@ -21,9 +21,9 @@ public class VideoServiceImpl implements VideoService {
     @Autowired
     private VideoMapper videoMapper;
 
-    public JsonData getListVideo() {
+    public List<Video> getListVideo() {
         List<Video> list = videoMapper.getList();
-        return JsonData.buildSuccess(list);
+        return list;
     }
 
 }

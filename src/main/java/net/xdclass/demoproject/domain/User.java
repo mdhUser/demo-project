@@ -1,7 +1,10 @@
 package net.xdclass.demoproject.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.xml.internal.ws.developer.Serialization;
 import lombok.Data;
+
+import java.io.Serializable;
 
 /**
  * @program: demo-project
@@ -11,9 +14,10 @@ import lombok.Data;
  **/
 @Data
 @Serialization
-public class User {
+public class User implements Serializable {
     private int id;
     private String username;
+//  @JsonIgnore
     private String pwd;
 
     public User() {

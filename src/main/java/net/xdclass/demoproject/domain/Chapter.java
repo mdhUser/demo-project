@@ -2,6 +2,8 @@ package net.xdclass.demoproject.domain;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @program: demo-project
  * @description: 章节
@@ -9,7 +11,7 @@ import lombok.Data;
  * @create: 2022-01-19 14:17
  **/
 @Data
-public class Chapter {
+public class Chapter implements Serializable {
     private int id;
     private int videoId;
     private String title;
