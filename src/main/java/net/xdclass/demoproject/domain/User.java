@@ -1,6 +1,5 @@
 package net.xdclass.demoproject.domain;
 
-import com.sun.xml.internal.ws.developer.Serialization;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -12,7 +11,6 @@ import java.io.Serializable;
  * @create: 2022-01-18 17:36
  **/
 @Data
-@Serialization
 public class User implements Serializable {
     private int id;
     private String username;
