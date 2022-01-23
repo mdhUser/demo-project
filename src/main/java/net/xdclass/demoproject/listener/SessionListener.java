@@ -16,12 +16,12 @@ public class SessionListener implements HttpSessionListener {
 
     @Override
     public void sessionCreated(HttpSessionEvent se) {
-        HttpSessionListener.super.sessionCreated(se);
+        System.out.println("sessionCreated======");
     }
 
 
     @Override
     public void sessionDestroyed(HttpSessionEvent se) {
-        HttpSessionListener.super.sessionDestroyed(se);
+        System.out.println("HttpSessionEvent=======");
     }
 }

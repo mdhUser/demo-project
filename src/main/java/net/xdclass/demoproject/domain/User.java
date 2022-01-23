@@ -1,6 +1,5 @@
 package net.xdclass.demoproject.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.xml.internal.ws.developer.Serialization;
 import lombok.Data;
 

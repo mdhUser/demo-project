@@ -2,6 +2,7 @@ package net.xdclass.demoproject.controller;
 
 import net.xdclass.demoproject.utils.JsonData;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class VideoOrderController {
 
 
-    @GetMapping("/saveOrder")
+    @PostMapping("/saveOrder")
     public JsonData saveOrder(){
 
         return JsonData.buildSuccess("下单成功！");

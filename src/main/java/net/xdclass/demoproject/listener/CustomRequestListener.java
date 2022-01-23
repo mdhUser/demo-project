@@ -16,12 +16,11 @@ public class CustomRequestListener implements ServletRequestListener{
     @Override
     public void requestDestroyed(ServletRequestEvent sre) {
 
-        System.out.println("requestDestroyed=======");
+        System.out.println("requestDestroyed=========");
     }
 
     @Override
     public void requestInitialized(ServletRequestEvent sre) {
-
-        System.out.println("requestInitialized=====");
+        System.out.println("requestInitialized========");
     }
 }
